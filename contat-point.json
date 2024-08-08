@@ -1,11 +1,19 @@
-apiVersion: 1
-contactPoints:
-    - orgId: 1
-      name: Grafana mail alerts for solar data
-      receivers:
-        - uid: fdtzytmrwxqf5b
-          type: email
-          settings:
-            addresses: solardata48@gmail.com
-            singleEmail: false
-          disableResolveMessage: false
+{
+    "apiVersion": 1,
+    "contactPoints": [
+        {
+            "orgId": 1,
+            "name": "Grafana mail alerts for solar data",
+            "receivers": [
+                {
+                    "uid": "fdtzytmrwxqf5b",
+                    "type": "email",
+                    "settings": {
+                        "addresses": "solardata48@gmail.com",
+                        "singleEmail": false
+                    },
+                    "disableResolveMessage": false
+                }
+            ]
+        }
+    ]
